@@ -1,0 +1,12 @@
+/*!
+ *  admin template custom 1.0.0 by liupeng
+ */
+.sub-menu>li.active>a {
+    border-left: 4px solid #1caf9a;
+}
+.page-bar {
+    margin-bottom: 15px;
+}
+.pagination {
+    float: right;
+}
