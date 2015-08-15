@@ -4,11 +4,20 @@
     "description": "Yii2 backend themes  https://github.com/liupdhc/yii2-liuxy-themes",   
     "keywords": ["yii", "themes"],
     "license": "BSD-3-Clause",
-    "type": "component",
+    "type": "yii2-extension",
+    "support": {
+        "issues": "https://github.com/liupdhc/yii2-liuxy-themes/issues?state=open",
+        "source": "https://github.com/liupdhc/yii2-liuxy-themes"
+    },
     "authors": [
         {
             "name": "liupeng",
             "email": "liupdhc@126.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "liuxy\\themes\\": ""
+        }
+    },
 }
