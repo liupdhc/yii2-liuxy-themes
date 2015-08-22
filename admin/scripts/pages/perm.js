@@ -78,9 +78,15 @@ var perm = function() {
                               liuxy.ajax(btnSubmit,requestUri+'get.json','json',
                                   {id:sel.substring('node_'.length)},
                                   function(data){
-                                      permForm[0].reset();
+                                      //permForm[0].reset();
                                       $('#name').val(data.name);
                                       $('#link').val(data.link);
+                                      $("input[name='is_nav']").each(function () {
+                                          if($(this).val() == data.is_nav) {
+                                              $(this).iCheck('check');
+                                              return false;
+                                          }
+                                      });
                                       $('#description').val(data.description);
                                       $('#parent_id').val(sel.substring('node_'.length));
                                       dialogTitle.html(lang.label.perm.node.edit);
