@@ -52,6 +52,7 @@ var user = function() {
                     $('#password').val('');
                     $('#username').val(data.username);
                     $('#username').attr('readonly','realonly');
+                    $('#trd_identifier').val(data.trd_identifier);
                     $("input[name='status']").each(function () {
                         if($(this).val() == data.status) {
                             $(this).parent().click();

@@ -1,5 +1,6 @@
 {
     "name": "liuxy/yii2-themes",
+    "version": "1.1.0.0",
     "description": "Yii2 backend themes  https://github.com/liupdhc/yii2-liuxy-themes",   
     "keywords": ["yii", "themes"],
     "license": "BSD-3-Clause",

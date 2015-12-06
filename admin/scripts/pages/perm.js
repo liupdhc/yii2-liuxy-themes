@@ -78,7 +78,6 @@ var perm = function() {
                               liuxy.ajax(btnSubmit,requestUri+'get.json','json',
                                   {id:sel.substring('node_'.length)},
                                   function(data){
-                                      //permForm[0].reset();
                                       $('#name').val(data.name);
                                       $('#link').val(data.link);
                                       $("input[name='is_nav']").each(function () {
