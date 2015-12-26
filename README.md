@@ -20,7 +20,7 @@ php composer.phar require --prefer-dist liuxy/yii2-themes "*"
 
 到 `composer.json` 文件中
 
-配置
+后台模板配置
 -------------
 
 修改Yii2 backend配置文件中components的`view` 部分:
@@ -28,5 +28,16 @@ php composer.phar require --prefer-dist liuxy/yii2-themes "*"
 ```php
 'view' => [
     'theme' => 'liuxy\admin\Theme'
+],
+```
+
+前台模板配置
+-------------
+
+修改Yii2 frontend配置文件中components的`view` 部分:
+
+```php
+'view' => [
+    'theme' => 'liuxy\frontend\Theme'
 ],
 ```
